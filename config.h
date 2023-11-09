@@ -9,23 +9,23 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 
-static const char col_magenta[]		= "#ff00ff";
-static const char col_ciano[]		= "#00ffff";
-static const char col_preto[]		= "#000000";
-static const char col_cinza1[]		= "#777777";
-static const char col_cinza2[]		= "#eeeeee";
+static const char col_preto[]		= "#0f0f0f";
+static const char col_cinza[]		= "#3f3f3f";
+static const char col_white[]		= "#dfdfdf";
 
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
+
 static const char *colors[][3]      = {
 	/*               fg           bg         border   */
-	[SchemeNorm] = { col_cinza2,  col_preto, col_preto },
-	[SchemeSel]  = { col_cinza1, col_preto,  col_preto  },
+	[SchemeNorm] = { col_cinza,  col_preto, col_cinza },
+	[SchemeSel]  = { col_white, col_preto,  col_preto  },
 };
 static const unsigned int alphas[][3]      = {
     /*               fg      bg        border*/
