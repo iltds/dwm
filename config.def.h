@@ -1,6 +1,8 @@
-/* See LICENSE file for copyright and license details. */
+// arquivo de configuracao dwm
 
-/* appearance */
+
+
+// appearance
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -19,21 +21,32 @@ static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 
-static const unsigned int baralpha = 0xd0;
-static const unsigned int borderalpha = OPAQUE;
-
 static const char *colors[][3]      = {
-	/*               fg           bg         border   */
-	[SchemeNorm] = { col_cinza,  col_preto, col_cinza },
-	[SchemeSel]  = { col_white, col_preto,  col_preto  },
-};
-static const unsigned int alphas[][3]      = {
-    /*               fg      bg        border*/
-    [SchemeNorm] = { OPAQUE, baralpha, borderalpha },
-	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
+	/*		fg		bg		border   */
+	[SchemeNorm] =	{ col_cinza,	col_preto,	col_preto },
+	[SchemeSel]  =	{ col_white,	col_preto,	col_preto  },
 };
 
-/* tagging */
+
+//transparencia
+static const unsigned int fg		= OPAQUE;
+static const unsigned int bg		= 0xd0;
+static const unsigned int border	= OPAQUE;
+
+static const unsigned int fg_sel	= 0xc0;
+static const unsigned int bg_sel	= 0xb0;
+static const unsigned int border_sel	= 0xb0;
+
+static const unsigned int alphas[][3]      = {
+    /*           	fg		bg		border*/
+    [SchemeNorm] =	{ fg,		bg,		border },
+	[SchemeSel] =	{ fg_sel,	bg_sel,		border_sel },
+};
+
+
+
+
+//
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
