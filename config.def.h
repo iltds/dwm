@@ -12,7 +12,7 @@ static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 
 static const char col_preto[]		= "#0f0f0f";
-static const char col_cinza[]		= "#3f3f3f";
+static const char col_cinza[]		= "#7f7f7f";
 static const char col_white[]		= "#dfdfdf";
 
 static const char col_gray1[]       = "#222222";
@@ -24,7 +24,7 @@ static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
 	/*		fg		bg		border   */
 	[SchemeNorm] =	{ col_cinza,	col_preto,	col_preto },
-	[SchemeSel]  =	{ col_white,	col_preto,	col_preto  },
+	[SchemeSel]  =	{ col_white,	col_preto,	col_preto },
 };
 
 
